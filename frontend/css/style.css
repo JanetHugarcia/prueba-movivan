@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:100,500,700);
+/*settings*/
+*{
+	margin:0;
+	padding: 0;
+
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+body{
+	font-size: 16px;
+	font-family: 'Dosis';
+	color:white;
+}
+/*style variables event onscroll*/
+#onepage{
+	background-color: #DC3B42;
+	transition: all 1s;
+
+}
+#prueba,#prueba2{  /*texto*/
+	transition: all 1s;
+}
+#prueba{
+	padding-top:12%;
+}
+#prueba2{
+	padding-top: 40%;
+}
+/*----------------------*/
+.section{
+	font-size: 1.5em;
+	text-align: center;
+	text-transform: uppercase;
+/*	padding:5%;
+	position: relative;*/
+}
+.vertical{
+/*	display: table;*/
+	width: 100%;
+	height: 100vh;
+}
+.image{
+	background-image: url('../img/iphone.png');
+	background-repeat: no-repeat;
+	background-size:cover;
+	top:150px;
+	width: 400px;
+	height: 600px;
+	position: fixed;
+	left:15%;
+}
+/*controllers*/
+.controllers{
+	position: fixed;
+	bottom:45%;
+	right: 15%;
+	z-index: 1000;
+
+}
+.controllers .bowl{
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background-color: white;
+	margin-bottom: 5px;
+	cursor:pointer;
+}
+/*hide scrollbar*/
+::-webkit-scrollbar
+{
+    width: 0px;
+}
+::-webkit-scrollbar-track-piece
+{
+    background-color: transparent;
+    -webkit-border-radius: 6px;
+}
+
+
+/*media querys*/
+@media screen and (max-width: 450px){
+	#prueba{
+		padding-top: 4%;
+	}
+	#prueba2{
+		padding-top: -10%;
+	}
+	.image{
+		top:30%;
+		left: -25%;
+	}
+	.controllers{
+		bottom:3%;
+		right: 3%;
+	}
+	.controllers .bowl{
+		width: 15px;
+		height: 15px;
+	}	
+
+
+}
+@media screen and (min-width: 451px) and (max-width: 767px){
+	.image{
+		top:25%;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+	.image{
+		top:35%;
+	}
+}
+@media screen and (min-width: 993px) and (max-width: 1200px){
+	.image{
+		left: 3%;
+	}
+	#prueba,#prueba2{
+		margin-left: 35%;
+	}
+	.controllers{
+		right: 5%;
+	}
+
+
+}

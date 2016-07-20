@@ -1,0 +1,17 @@
+body{
+	padding-left: 10%;
+}
+span{
+	background-color: yellow;
+}
+form{
+	padding:2%;
+	margin:5%;
+}
+.lista{
+	margin-top: 2%;
+}
+input,button{
+	display: block;
+	margin:5px;
+}

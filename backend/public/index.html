@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1>Mantenimiento</h1>
+	<form action="/user" method="POST">
+	  <input type="text" placeholder="nombre" name="nombre" required>
+	  <input type="text" placeholder="apellido" name="apellido" required>
+	  <input type="text" placeholder="dni" name="dni" required>
+	  <input type="text" placeholder="telefono" name="telefono" required>
+	  <input type="text" placeholder="direccion" name="direccion" required>
+	  <button type="submit">Agregar</button>
+	</form>
+	<hr>
+	<hr>
+	<!--Busqueda-->
+	<input id="nameuser" type="text"><br>
+	<small>prueba con este --> id=  577e86b36d6029c422000002</small><br>
+	<button id="btnBuscar">Buscar por id</button><button id="btnLimpiar">Limpiar</button><br>
+		<a href="http://localhost:8000/informacion.html" target="n_blanck">Obtenga Lista Completa</a><br>
+	
+	<label for="nombre">Nombre:
+		<span class="nombre"></span>
+	</label><br>
+	<label for="surname">Apellido:
+		<span class="surname"></span>
+	</label><br>
+	<label for="dni">DNI:
+		<span class="dni"></span>
+	</label><br>
+	<label for="telefono">Telefono:
+		<span class="telefono"></span>
+	</label><br>
+	<label for="direccion">Direccion:
+		<span class="direccion"></span>
+	</label><br>
+	<label for="fecha">Fecha:
+		<span class="fecha"></span>
+	</label><br>
+	<label for="idem">CODIGO:
+		<span class="idem"></span>
+	</label><br>
+
+	<!--scripts-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
